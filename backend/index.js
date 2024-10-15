@@ -15,6 +15,10 @@ app.use(express.json());
 connectDB();
 
 app.use('/api', userRoutes)
+app.use('/' ,(req,res)=>{
+    console.log('server is running');
+    res.send('server is running');
+});
 
 
 const PORT = process.env.PORT || 5000;
