@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://leaderboard-proj.vercel.app/api';
+const API_URL = 'https://leaderboard-project-backend.vercel.app/api';
 
 export const getUsers = async () => {
   const res = await axios.get(`${API_URL}/users`);
